@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace AppEstudo
+{
+    public static class Texts
+    {
+        public static int isPT = SelectLanguage.Select();
+
+        //Manda os Textos para o Program
+        public static string retornaText(this string outText)
+        {
+            if(isPT == 1)
+            {
+                outText = "O meu texto está em português";
+                return outText; //codigo
+            }
+
+            else if (isPT == 2)
+            {
+                outText = "My text is in English";
+                return outText; //codigo
+            }
+
+            else
+            {
+                outText = "No language found";
+                return outText; //codigo
+            }
+        }
+    }
+}
