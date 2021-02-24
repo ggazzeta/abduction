@@ -1,0 +1,15 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace AppEstudo
+{
+    class Botoes
+    {
+        //Botao chamado pelo método que é chamado pelo OnClick()
+        public static void chamaBotao(string msgTxt)
+        {
+            Console.WriteLine(msgTxt);
+        }
+    }
+}
