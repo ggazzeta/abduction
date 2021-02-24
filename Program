@@ -1,0 +1,34 @@
+using System;
+
+namespace AppEstudo
+{
+    class Program
+    {
+        private Boolean hasAccess = false;
+
+        //Chama o Botão -- Esse método no Abduction será aquele chamado pelo OnClick()
+        static void Main(string[] args)
+        {
+            Program prg = new Program();
+
+            if (prg.hasAccess)
+            {
+                Botoes.chamaBotao(MyTxtMsg);
+            }
+
+            else
+            {
+                return;
+            }
+        }
+
+        private static string _myTxtMsg;
+
+        public static string MyTxtMsg
+        {
+            get { return _myTxtMsg.retornaText(); }
+            set { _myTxtMsg = value; }
+        }
+
+    }
+}
